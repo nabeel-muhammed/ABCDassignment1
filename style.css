@@ -1,147 +1,175 @@
-.navtop {
-	background-color: #2f3947;
-	height: 60px;
-	width: 100%;
-	border: 0;
+*{
+	font-family: Open Sans,MundoSans,"Helvetica Neue",Arial,Helvetica,sans-serif;
 }
-.navtop div {
-	display: flex;
-	margin: 0 auto;
-	width: 1000px;
+header{
+
+	height: 15%;
+	padding: .7%;
+	overflow: hidden;
+	position: fixed;
+}
+header h1{
+
+	margin-top: 10%;
+}
+.circle{
+	width: 10%;
+	border-radius: 50%;
+	border: 3px solid white;	
+	margin-top: 5%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.headerlogo{	
+	border: 6px solid black;
+	padding-left: 14%; 
+	padding-right: 10%;
+	width: 60px;
+
+}
+.headerlogo h1{
+	margin-left: 5%;
+	font-size: 40px;
+}
+.info p{
+	color: #999;
+}
+.info h1{
+	font-weight: 900;
+	margin-top: 2%;
+}
+.content{
+	margin-top: 5%;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
 	height: 100%;
+	width: 65%;
+	padding: 2%;
+
 }
-.navtop div h1, .navtop div a {
-	display: inline-flex;
-	align-items: center;
+.content h2{
+	text-align: left;
 }
-.navtop div h1 {
-	flex: 1;
-	font-size: 24px;
-	padding: 0;
-	margin: 0;
-	color: #eaebed;
-	font-weight: normal;
+.content a{
+	color: black;
+	text-decoration: underline;
+	font-size: 20px;
+	float: left;
+	font-family: Verdana;
 }
-.navtop div a {
-	padding: 0 20px;
+.content .date{
+
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+.content .date p{
+	font-size: 15px;
+	font-style: oblique;
+	line-height: 8px;
+}
+.content a:hover{
+	color: black;
+	font-weight: 600; 
+	
+}
+.content p{
+	color: #566573;
+	text-align: left;
+	font-weight: 400;
+	font-style: normal;
+	font-size:22px;
+	hyphens: auto;
+	font-family: Linux Libertine;
+
+}
+.line{
+	border: .5px solid #EAECEE;
+	margin-right: 17.5%;
+	margin-left: 17.5%;	
+}
+
+.fa {
+  padding-right: 1%;
+    padding-left: 1%;
+      padding-bottom: 1%;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+.fa-facebook,.fa-github,.fa-twitter,.fa-youtube,.fa-instagram,.fa-linkedin {
+  color: black;
+}
+.fa-facebook:hover{
+	color: #3B5998;
 	text-decoration: none;
-	color: #c1c4c8;
-	font-weight: bold;
 }
-.navtop div a i {
-	padding: 2px 8px 0 0;
+.fa-twitter:hover{
+	color: #55ACEE;
+	text-decoration: none;
 }
-.navtop div a:hover {
-	color: #eaebed;
+.fa-youtube:hover{
+	color: #bb0000;
+	text-decoration: none;
 }
-body.loggedin {
-	background-color: #f3f4f7;
+.fa-linkedin:hover{
+	color: #007bb5;
+	text-decoration: none;
 }
-.content {
-	width: 100%;
-	margin: 0 auto;
+.fa-instagram:hover{
+	color: #125688;
+	text-decoration: none;
 }
-.content01 {
-	width: 95%;
-	margin: 0 auto;
-}
-.content02 {
-	width: 95%;
-	margin: 0 auto;
-}
-.content03 {
-	width: 90%;
-	margin: 0 auto;
-}
-.content h2 {
-	margin: 0;
-	padding: 25px 0;
-	font-size: 22px;
-	border-bottom: 1px solid #e0e0e3;
-	color: #4a536e;
-}
-.content > p, .content > div {
-	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
-	margin: 25px 0;
-	padding: 25px;
-	background-color: #fff;
-}
-.content1{
-	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
-	margin: 25px 0;
-	padding: 25px;
-	background-color: #fff;	
-}
-.content > p table td, .content > div table td {
-	padding: 5px;
-}
-.content > p table td:first-child, .content > div table td:first-child {
-	font-weight: bold;
-	color: #4a536e;
-	padding-right: 15px;
-}
-.content > div p {
-	padding: 5px;
-	margin: 0 0 10px 0;
-}
-
-/* Footer */
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-section {
-    padding: 3%;
-}
-
-
-#footer {
-    background: #0B0402 !important;
-}
-body .container{
-	width: 60%;
-}
-#footer a {
-    color: #ffffff;
-    text-decoration: none !important;
-    background-color: transparent;
-    -webkit-text-decoration-skip: objects;
-}
-#footer ul.quick-links li a{
-	color:#ffffff;
-}
-#footer ul.social li a:hover{
-	color:#eeeeee;
-}
-#footer ul.quick-links li{
-	padding: 3px 0;
-	-webkit-transition: .5s all ease;
-	-moz-transition: .5s all ease;
-	transition: .5s all ease;
-}
-#footer ul.quick-links li:hover{
-	padding: 3px 0;
-	margin-left:5px;
-	font-weight:700;
-}
-#footer ul.quick-links li a i{
-	margin-right: 5px;
-}
-#footer ul.quick-links li:hover a i {
-    font-weight: 700;
-}
-
-@media (max-width:767px){
-	#footer h5 {
-}
+.fa-github:hover{
+	color: grey;
+	text-decoration: none;
 }
 
 @media only screen and (max-width:620px) {
   /* For mobile phones: */
-.content1 h1{
-	font-size: 25px;
+  .content {
+    width:100%;
+    padding-right: 2%;
+  }
+  .content p{
+  	font-size: 18px;
+  	margin-left: 4%;
+  	margin-right: 4%;
+  }
+  .content h2{
+  	margin-left: 4%;
+  }
+  .circle{
+  	width: 40%;
+  	margin-top: 10%;
+  }
+  .headerlogo{
+  	width: 50px;
+  	margin: 2%;
+  		border: 6px solid black;	
+  	background-color: white;
+  }
+   .headerlogo h1{
+	font-size: 30px;
+	margin-left: 10%;
+		margin-top: 20%;
 }
-.content1 img{
-	width: 100%;
+  .line{
+	border: none;
+	margin-right: none;
+	margin-left: none;	
+ }
+ .info p,.info h1{
+ 	margin-left: 2%;
+ 	margin-right: 2%;
+ }
+ .content .date{
+
+	margin-top: 8%;
+	margin-bottom: 8%;
 }
-body .container{
-	width: 100%;
 }
+
+.posts{
+	padding-bottom: 5%;
 }
